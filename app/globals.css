@@ -24,3 +24,27 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.leaflet-container {
+  min-height: 100%;
+  width: 100%;
+}
+
+.citypulse-issue-marker {
+  background: transparent;
+  border: 0;
+}
+
+.citypulse-issue-marker span {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid white;
+  border-radius: 9999px;
+  box-shadow: 0 4px 12px rgb(15 23 42 / 0.3);
+  transition: transform 150ms ease;
+}
+
+.citypulse-issue-marker:hover span {
+  transform: scale(1.1);
+}
